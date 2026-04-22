@@ -31,6 +31,19 @@ public:
             {
                 item.freeforall = true;
             }
+            
+            // Draconic for Dummies exception...
+            if ((itemTemplate->ItemId == 21103) ||
+                (itemTemplate->ItemId == 21104) ||
+                (itemTemplate->ItemId == 21105) ||
+                (itemTemplate->ItemId == 21106) ||
+                (itemTemplate->ItemId == 21107) ||
+                (itemTemplate->ItemId == 21108) ||
+                (itemTemplate->ItemId == 21109) ||
+                (itemTemplate->ItemId == 21110))
+            {
+                item.freeforall = true;
+            }
         }
     }
 };
