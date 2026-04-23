@@ -27,7 +27,8 @@ public:
         {
             ItemTemplate const* itemTemplate = sObjectMgr->GetItemTemplate(item.itemid);
 
-            if ((itemTemplate->Quality == ITEM_QUALITY_NORMAL) && (itemTemplate->Class == ITEM_CLASS_QUEST) && (itemTemplate->SubClass == ITEM_SUBCLASS_QUEST) && (itemTemplate->Bonding == BIND_QUEST_ITEM))
+//            if ((itemTemplate->Quality == ITEM_QUALITY_NORMAL) && (itemTemplate->Class == ITEM_CLASS_QUEST) && (itemTemplate->SubClass == ITEM_SUBCLASS_QUEST) && (itemTemplate->Bonding == BIND_QUEST_ITEM))
+            if ((itemTemplate->Class == ITEM_CLASS_QUEST) || (itemTemplate->Bonding == BIND_QUEST_ITEM))
             {
                 item.freeforall = true;
             }
